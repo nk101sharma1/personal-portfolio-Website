@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/05b34edce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrip.js">
+    <i id="theme-toggle" class="fa-solid fa-moon" onclick="toggleTheme()" title="Toggle Dark/Light Mode"></i>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> <img src="image/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="cmenu()"></i>
+                    <i id="theme-toggle" class="fa-solid fa-moon" onclick="toggleTheme()" title="Toggle Dark/Light Mode"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="omenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <p>& Fullstack web developer</p>
+                <h1>Hi, I'm <span>Jitendra</span><br>From Bhagalpur, Bihar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/photo.png" class="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a web developer, I am a technically adept professional with expertise in HTML, CSS, and
+                        JavaScript, proficiently navigating both frontend and backend development. Skilled in frameworks
+                        like React and Node.js, I am dedicated to creating responsive and visually appealing user
+                        interfaces. With a keen eye for detail, I prioritize web performance optimization and implement
+                        rigorous testing and debugging procedures to ensure the seamless functionality of websites.
+                        Well-versed in version control systems like Git, I thrive in collaborative environments,
+                        effectively communicating with cross-functional teams. My commitment to continuous learning
+                        keeps me abreast of the latest industry trends, while my problem-solving mindset allows me to
+                        tackle complex challenges. With a portfolio showcasing diverse projects, I bring a combination
+                        of creativity and technical proficiency to every web development endeavor.</p>
+                    <!-- The social media icon bar -->
+                    <div class="icon-bar">
+                        <a href="https://www.facebook.com/jitendra.shrma.7965/" class="facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nk_sharma9" class="instagram"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jitendra-kumar-a74891237/" class="linkedin"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/nk101sharma1" class="github"><i class="fa fa-github"></i></a>
+                    </div>
+
+
+
+                    <div class="tab-tittle">
+                        <p class="tablink active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tablink" onclick="opentab('experience')">Experience</p>
+                        <p class="tablink" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing web/App Interfaces</li>
+                            <br>
+                            <li><span>Web development</span><br>web/App Development</li>
+                            <br>
+                            <li><span>App Development </span><br>Building Android Apps</li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Internship at Bharat Intern</li>
+                            <br>
+                            <li><span>2021-2022</span><br>web/App Development at wavesandvibes.in</li>
+                            <br>
+                            <li><span>2022-2023</span><br>UI/UX Design Training at wavesandvibes.in</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>currently persuing Master of Computer Application form LNCTU
+                            </li>
+                            <br>
+                            <li><span>2019-2022</span><br>I have passed BCA from TMBU with 72%</li>
+                            <br>
+                            <li><span>2018-2019</span><br>I have Passed 12th form G.B.College Nacugachia with 65.4%</li>
+                            <br>
+                            <li><span>2018-2019</span><br>I have Passed KYP form Maxwell with 92%</li>
+                            <br>
+                            <li><span>2016-2017</span><br>I have Passed 10th form Pachgachia High school with 70.4%</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- -------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design </h2>
+                    <p>As a web designer, I specialize in seamlessly blending artistic creativity with technical
+                        proficiency, using tools like Adobe Creative Suite and Figma to craft visually stunning and
+                        user-centric digital experiences that not only reflect the unique identities of clients but also
+                        prioritize intuitive navigation and contemporary design trends.</p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design </h2>
+                    <p>In the realm of UI/UX design, I am dedicated to creating seamless and aesthetically pleasing
+                        digital interactions by combining a deep understanding of user behaviors with a keen eye for
+                        visually compelling interfaces.</p>
+                    <a href="#">Learn more </a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>In the field of app development, I leverage my coding expertise to create innovative and
+                        functional mobile applications that address specific user needs and enhance overall user
+                        experiences.</p>
+                    <a href="#">Learn more </a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------portfolio---- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png">
+                    <div class="layer">
+                        <h3>resumebuilder
+                        </h3>
+                        <p>A resume builder website is an online platform that provides tools and templates to help users easily create professional resumes tailored to specific job roles.
+                        </p>
+                        <a href="https://nk101sharma1.github.io/Resume-Builder/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png">
+                    <div class="layer">
+                        <h3> online App</h3>
+                        <p>As an online app developer, I focus on creating dynamic and user-friendly web applications
+                            that harness the power of the internet to deliver seamless and accessible solutions for
+                            diverse user needs.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>In the realm of social media app development, my expertise lies in crafting engaging and
+                            user-centric platforms that facilitate seamless communication, foster connections, and
+                            enhance the overall social experience.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+
+    <!-- ---- contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-share"></i> sharmajitu01010@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9608858385</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jitendra.shrma.7965/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nk_sharma9"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/jitendra-kumar-a74891237/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/nk101sharma1"><i class="fa-brands fa-github"></i></a>
+
+
+                    </div>
+                    <a href="image/cv.pdf" download class="btn btn2">Downlod CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/xdkazdpw" method="post" name="">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="'6" placeholder="Your Message "></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+
+            <div class="copyrigth">
+                <p>Copyrigth <i class="fa-regular fa-copyright"></i> Jitendra. develop with <i
+                        class="fa-solid fa-heart"></i> by jitu</p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- java <script></script> -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablink");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tab of tablinks) {
+                tab.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-tab");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function omenu() {
+            sidemenu.style.right = "0";
+        }
+        function cmenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbuMMB1iL45ykNn6xaYKzxT9CuXgImT8F7PTWizMq0ZFfS7kH2O9OKPdeENOhlAbPM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+</body>
+
+</html>
